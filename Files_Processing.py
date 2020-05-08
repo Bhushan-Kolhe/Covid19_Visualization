@@ -24,5 +24,18 @@ def moveDatasets():
     for f in files:
         os.rename(f, '{}\\Datasets\\{}'.format(os.getcwd(), f.split('\\')[-1]))
 
+
+def removeOldFiles():
+    files= []
+    files = ['./Datasets/time_series_covid19_confirmed_global.csv', './Datasets/time_series_covid19_deaths_global.csv', './Datasets/time_series_covid19_recovered_global.csv', './images/Active.png', './images/Confirmed.png', './images/Deceased.png', './images/Recovered.png', './images/Mean_Age.png', './images/population.png', './images/Tourism.png']
+
+    for f in files:
+        try:
+            os.remove(f)
+        except:
+            pass
+
+
+removeOldFiles()
 moveDatasets()
 getScreenshots()
