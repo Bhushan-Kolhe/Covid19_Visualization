@@ -43,7 +43,7 @@ This repository tracks and analyse the spread of the coronavirus (COVID-19). Thi
         * [Population](#Population)
     * [Top 25 Countries](#Top_25_Countries)
         * [Bar Charts](#BarChart2)
-            * [Overview](#Overview)
+            * [Overview](#Overview2)
             * [Grouped](#Grouped)
             * [Stacked](#Stacked)  
         * [Scatter Charts](#Scatter)
@@ -212,7 +212,7 @@ ___
 <h2 id="Top_25_Countries">Top 25 Countries</h2>
 
 <h3 id="BarChart2">Bar Chart</h3>
-<h3 id="Overview">Overview</h3>
+<h3 id="Overview2">Overview</h3>
 
 ![](./images/Top_Countries_Overview.svg)
 
