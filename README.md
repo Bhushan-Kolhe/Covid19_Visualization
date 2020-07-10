@@ -2,8 +2,6 @@
 
 This repository tracks and analyse the spread of the coronavirus (COVID-19). This repository is updated every few hours. 
 
-* Kaggle: [Covid19 Visualization](https://www.kaggle.com/kkbk58901/covid19-visualization)
-
 ## Datasets
  * [COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19)
  * [Population by Country - 2020](https://www.kaggle.com/tanuprabhu/population-by-country-2020)
