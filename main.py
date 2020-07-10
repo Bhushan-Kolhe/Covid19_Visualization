@@ -68,6 +68,16 @@ for f in files:
         pass
 
 
+PATH_OF_GIT_REPO = r'D:\\Projects\\ML\\Covid19\\.git'
+
+try:
+    repo = Repo(PATH_OF_GIT_REPO)
+    repo.git.add('--all')
+    repo.index.commit("Reset Repo")
+except:
+    print("Reset Error")
+
+
 Active, Recovered, Confirmed, Deceased, Color_1, Color_2 =  '#ff073a', '#28a745', '#007bff', '#6c757d', '#FE9801', '#FF0F80'
 
 urls = ['https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv', 
@@ -1188,7 +1198,7 @@ getScreenshots()
 
 _date = datetime.datetime.now()
 
-PATH_OF_GIT_REPO = r'D:\\Projects\\ML\\Covid19\\.git'  # make sure .git folder is properly configured
+PATH_OF_GIT_REPO = r'D:\\Projects\\ML\\Covid19\\.git' 
 COMMIT_MESSAGE = "{} Update".format(_date)
 
 def git_push():
