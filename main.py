@@ -22,6 +22,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from git import Repo
 import datetime
+import time
 
 #plotly.io.orca.config.executable = "C:\\Users\\kkbk5\\AppData\\Roaming\\npm\\orca"
 
@@ -1195,6 +1196,8 @@ moveDatasets()
 getScreenshots()
 
 # ---------------------------------------------------------------------------------------------------------------------------------
+
+time.sleep(30)
 
 _date = datetime.datetime.now()
 
