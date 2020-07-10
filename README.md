@@ -1,6 +1,6 @@
 # 🔬 Covid 19 Visualization
 
-This repository tracks and analyse the spread of the coronavirus (COVID-19). This repository is updated every 24 hours. 
+This repository tracks and analyse the spread of the coronavirus (COVID-19). This repository is updated every few hours. 
 
 * Kaggle: [Covid19 Visualization](https://www.kaggle.com/kkbk58901/covid19-visualization)
 
