@@ -24,6 +24,7 @@ from git import Repo
 import datetime
 import time
 
+
 #plotly.io.orca.config.executable = "C:\\Users\\kkbk5\\AppData\\Roaming\\npm\\orca"
 
 if not os.path.exists("images"):
@@ -1202,7 +1203,7 @@ time.sleep(30)
 _date = datetime.datetime.now()
 
 PATH_OF_GIT_REPO = r'D:\\Projects\\ML\\Covid19\\.git' 
-COMMIT_MESSAGE = "{} Update".format(_date)
+COMMIT_MESSAGE = "{}:{} {}/{}/{} Update".format( _date.hour, _date.minute, _date.day, _date.month, _date.year)
 
 def git_push():
     try:
