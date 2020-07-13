@@ -1,3 +1,8 @@
+# Python version 3.7.7
+# To save images install plotly-orca using cmd:
+# conda install -c plotly plotly-orca==1.2.1 psutil requests
+# More Information at: https://plotly.com/python/static-image-export/
+
 from plotly.offline import plot, iplot, init_notebook_mode
 from selenium.webdriver.firefox.options import Options
 from plotly.subplots import make_subplots
@@ -25,7 +30,7 @@ import sys
 import os
 
 
-
+# Creating and Cleaning up Directories
 if not os.path.exists("images"):
     os.mkdir("images")
 
@@ -68,7 +73,7 @@ for f in files:
     except:
         pass
 
-
+# Reseting the repository
 PATH_OF_GIT_REPO = r'D:\\Projects\\ML\\Covid19\\.git'
 
 try:
@@ -81,6 +86,7 @@ except:
 
 Active, Recovered, Confirmed, Deceased, Color_1, Color_2 =  '#ff073a', '#28a745', '#007bff', '#6c757d', '#FE9801', '#FF0F80'
 
+# Data Extraction
 urls = ['https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv', 
         'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv',
         'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv']
@@ -101,6 +107,7 @@ country_geo = "./Input/world-countries.json"
 #print(recovered_df.shape)
 
 
+# Data Cleaning and Processing
 # ---------------------------------------------------------------------------------------------------------------------------------
 dates = confirmed_df.columns[4:]
 
@@ -263,6 +270,7 @@ Top_Countries.to_csv('./Datasets/covid_19_Top_Countries.csv', index=False)
 Top_Countries_Daily.to_csv('./Datasets/covid_19_Top_Countries_Daily.csv', index=False)
 cov.to_csv('./Datasets/covid_19_Countries_usefulFeatures.csv', index=False)
 
+# Data Visualization
 # ---------------------------------------------------------------------------------------------------------------------------------
 
 temp = full_table.groupby('Date')['Confirmed', 'Deaths', 'Recovered', 'Active'].sum().reset_index()
@@ -1170,8 +1178,9 @@ for idx, Country in enumerate(Countries):
 fig.update_layout(height=2500, title_text="No. of New Cases Reported in each Country (Logarithmic)")    
 fig.write_image("images/Top_Country_Daily_Seperate_Line_New_Log.svg")
 
-# ---------------------------------------------------------------------------------------------------------------------------------
 
+# File Processing
+# ---------------------------------------------------------------------------------------------------------------------------------
 
 def getScreenshots():
     files = [f for f in glob.glob(os.getcwd() + "\Maps\*.html", recursive=True)]
