@@ -1,31 +1,30 @@
-import sys
-from datetime import timedelta
-from IPython.display import FileLink
-from plotly.subplots import make_subplots
 from plotly.offline import plot, iplot, init_notebook_mode
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
-import matplotlib.pyplot as plt
-import plotly.express as px
-import plotly.graph_objs as go
+from selenium.webdriver.firefox.options import Options
+from plotly.subplots import make_subplots
+from IPython.display import FileLink
+from datetime import timedelta
+from selenium import webdriver
+from git import Repo
+
 import plotly.figure_factory as ff
-import plotly
+import matplotlib.pyplot as plt
+import plotly.graph_objs as go
+import plotly.express as px
+import pandas as pd 
+import numpy as np 
+import datetime
 import warnings
+import plotly
 import calmap
 import folium
 import wget
 import math
-import os
 import glob
 import time
-from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
-from git import Repo
-import datetime
-import time
+import sys
+import os
 
 
-#plotly.io.orca.config.executable = "C:\\Users\\kkbk5\\AppData\\Roaming\\npm\\orca"
 
 if not os.path.exists("images"):
     os.mkdir("images")
