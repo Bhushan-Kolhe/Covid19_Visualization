@@ -1,0 +1,2625 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a7a4ac561b6a49f5963c013bd321963f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a7a4ac561b6a49f5963c013bd321963f" ></div>
+        
+</body>
+<script>    
+    
+            var map_a7a4ac561b6a49f5963c013bd321963f = L.map(
+                "map_a7a4ac561b6a49f5963c013bd321963f",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_572245ab5b56464d8a36c8564c70b8fa = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 4, "maxZoom": 4, "minZoom": 1, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            var circle_23f2b35f94cd4e68a81a13cf1c7da4e6 = L.circle(
+                [33.93911, 67.709953],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4211.468330067666, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_23f2b35f94cd4e68a81a13cf1c7da4e6.bindTooltip(
+                `<div>
+                     <li><bold>Country : Afghanistan<li><bold>Confirmed : 34740<li><bold>Active : 12238<li><bold>Deaths : 1048<li><bold>New Cases : 285<li><bold>New Death : 36<li><bold>New Recovered : 200
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f0e7e3ac0d1e414bbc2580973db1328c = L.circle(
+                [41.153332, 20.168331],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 242.17320037801238, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_f0e7e3ac0d1e414bbc2580973db1328c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Albania<li><bold>Confirmed : 3667<li><bold>Active : 1508<li><bold>Deaths : 97<li><bold>New Cases : 96<li><bold>New Death : 2<li><bold>New Recovered : 48
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dd388fa2688b43eeb1e61fd74f97704b = L.circle(
+                [28.033886, 1.6596259999999998],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4115.207492201202, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_dd388fa2688b43eeb1e61fd74f97704b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Algeria<li><bold>Confirmed : 20216<li><bold>Active : 4893<li><bold>Deaths : 1028<li><bold>New Cases : 527<li><bold>New Death : 10<li><bold>New Recovered : 276
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6af1606560004c92a56818c3965ae481 = L.circle(
+                [42.546245, 1.6015540000000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 114.60511792303392, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_6af1606560004c92a56818c3965ae481.bindTooltip(
+                `<div>
+                     <li><bold>Country : Andorra<li><bold>Confirmed : 861<li><bold>Active : 6<li><bold>Deaths : 52<li><bold>New Cases : 3<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2649dfe1435d4d00903b3c98739a6c75 = L.circle(
+                [-11.202691999999999, 17.873887],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 49.88477498225796, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_2649dfe1435d4d00903b3c98739a6c75.bindTooltip(
+                `<div>
+                     <li><bold>Country : Angola<li><bold>Confirmed : 541<li><bold>Active : 397<li><bold>Deaths : 26<li><bold>New Cases : 16<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d7bdfb82f8684cde8ce28652f982b594 = L.circle(
+                [17.060816, -61.79642800000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7371928188465517, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d7bdfb82f8684cde8ce28652f982b594.bindTooltip(
+                `<div>
+                     <li><bold>Country : Antigua and Barbuda<li><bold>Confirmed : 74<li><bold>Active : 14<li><bold>Deaths : 3<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a9ddfa2060e342d48dad1f0aac9d3762 = L.circle(
+                [-38.416097, -63.616671999999994],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8970.778074337562, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_a9ddfa2060e342d48dad1f0aac9d3762.bindTooltip(
+                `<div>
+                     <li><bold>Country : Argentina<li><bold>Confirmed : 106910<li><bold>Active : 59475<li><bold>Deaths : 1968<li><bold>New Cases : 3645<li><bold>New Death : 65<li><bold>New Recovered : 1294
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c894ff31b3fd419d8ae5cc5807030555 = L.circle(
+                [40.069099, 45.038189],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2074.967787031846, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_c894ff31b3fd419d8ae5cc5807030555.bindTooltip(
+                `<div>
+                     <li><bold>Country : Armenia<li><bold>Confirmed : 32490<li><bold>Active : 11180<li><bold>Deaths : 581<li><bold>New Cases : 339<li><bold>New Death : 8<li><bold>New Recovered : 864
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_324135324d5c4261ad07f1bd25e91d5e = L.circle(
+                [-25.274398, 133.775136],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 284.700070403702, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_324135324d5c4261ad07f1bd25e91d5e.bindTooltip(
+                `<div>
+                     <li><bold>Country : Australia<li><bold>Confirmed : 10487<li><bold>Active : 2448<li><bold>Deaths : 111<li><bold>New Cases : 236<li><bold>New Death : 3<li><bold>New Recovered : 93
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_357562b8d9cf4147a8ead1445169e5e4 = L.circle(
+                [47.516231, 14.550072],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2634.968830408597, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_357562b8d9cf4147a8ead1445169e5e4.bindTooltip(
+                `<div>
+                     <li><bold>Country : Austria<li><bold>Confirmed : 19021<li><bold>Active : 1239<li><bold>Deaths : 709<li><bold>New Cases : 73<li><bold>New Death : 1<li><bold>New Recovered : 73
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_342e71a5613c44b8bade9048be4b16e4 = L.circle(
+                [40.143105, 47.57692700000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1010.5290891750537, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_342e71a5613c44b8bade9048be4b16e4.bindTooltip(
+                `<div>
+                     <li><bold>Country : Azerbaijan<li><bold>Confirmed : 25113<li><bold>Active : 8644<li><bold>Deaths : 319<li><bold>New Cases : 543<li><bold>New Death : 6<li><bold>New Recovered : 510
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1ec5f5e99268470b975b4e90edccd222 = L.circle(
+                [25.03428, -77.39628],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.769336928223957, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_1ec5f5e99268470b975b4e90edccd222.bindTooltip(
+                `<div>
+                     <li><bold>Country : Bahamas<li><bold>Confirmed : 116<li><bold>Active : 14<li><bold>Deaths : 11<li><bold>New Cases : 3<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_08ba4429bc8646cbb0a740ebd9558d5b = L.circle(
+                [25.93041400000001, 50.637772],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 284.700070403702, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_08ba4429bc8646cbb0a740ebd9558d5b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Bahrain<li><bold>Confirmed : 34078<li><bold>Active : 4214<li><bold>Deaths : 111<li><bold>New Cases : 602<li><bold>New Death : 2<li><bold>New Recovered : 654
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_26dcbe1092324fc5ac5c85d1537e9213 = L.circle(
+                [23.684994, 90.35633100000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11519.646138419845, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_26dcbe1092324fc5ac5c85d1537e9213.bindTooltip(
+                `<div>
+                     <li><bold>Country : Bangladesh<li><bold>Confirmed : 190057<li><bold>Active : 84406<li><bold>Deaths : 2424<li><bold>New Cases : 3163<li><bold>New Death : 33<li><bold>New Recovered : 4910
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7a4d4b2ef6c14ab1b124bc49af9e1782 = L.circle(
+                [13.193887, -59.543198],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.330412131161864, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_7a4d4b2ef6c14ab1b124bc49af9e1782.bindTooltip(
+                `<div>
+                     <li><bold>Country : Barbados<li><bold>Confirmed : 103<li><bold>Active : 6<li><bold>Deaths : 7<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a0320388e38c441e9e5998f9dcb6c674 = L.circle(
+                [53.709807, 27.953389],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1625.3017763319103, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_a0320388e38c441e9e5998f9dcb6c674.bindTooltip(
+                `<div>
+                     <li><bold>Country : Belarus<li><bold>Confirmed : 65269<li><bold>Active : 8996<li><bold>Deaths : 474<li><bold>New Cases : 155<li><bold>New Death : 6<li><bold>New Recovered : 307
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0daf37b13629469e8d94b5a40e81e803 = L.circle(
+                [50.503887, 4.469936],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 61486.46228467354, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_0daf37b13629469e8d94b5a40e81e803.bindTooltip(
+                `<div>
+                     <li><bold>Country : Belgium<li><bold>Confirmed : 62781<li><bold>Active : 35771<li><bold>Deaths : 9787<li><bold>New Cases : 74<li><bold>New Death : 5<li><bold>New Recovered : 27
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_da65c7ebc1ca4942b3d88604856e13d2 = L.circle(
+                [17.189877, -88.49765],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2973967099940698, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_da65c7ebc1ca4942b3d88604856e13d2.bindTooltip(
+                `<div>
+                     <li><bold>Country : Belize<li><bold>Confirmed : 39<li><bold>Active : 16<li><bold>Deaths : 2<li><bold>New Cases : 2<li><bold>New Death : 0<li><bold>New Recovered : 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5bfdc4cc25fc4273a99b110803d0c7e7 = L.circle(
+                [9.30769, 2.315834],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 49.88477498225796, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_5bfdc4cc25fc4273a99b110803d0c7e7.bindTooltip(
+                `<div>
+                     <li><bold>Country : Benin<li><bold>Confirmed : 1378<li><bold>Active : 795<li><bold>Deaths : 26<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1569bd53eaa4461b9930c31e471347f1 = L.circle(
+                [27.514162, 90.433601],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_1569bd53eaa4461b9930c31e471347f1.bindTooltip(
+                `<div>
+                     <li><bold>Country : Bhutan<li><bold>Confirmed : 84<li><bold>Active : 6<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_594d929d7431438e8fbfdc6cb475a97c = L.circle(
+                [-16.290154, -63.588653],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8589.25407700788, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_594d929d7431438e8fbfdc6cb475a97c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Bolivia<li><bold>Confirmed : 50867<li><bold>Active : 33150<li><bold>Deaths : 1898<li><bold>New Cases : 1617<li><bold>New Death : 32<li><bold>New Recovered : 525
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d191b43d064d43e1b79912ce38bce763 = L.circle(
+                [43.915886, 17.679076000000006],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 668.236397313428, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d191b43d064d43e1b79912ce38bce763.bindTooltip(
+                `<div>
+                     <li><bold>Country : Bosnia and Herzegovina<li><bold>Confirmed : 6981<li><bold>Active : 3576<li><bold>Deaths : 226<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c06f28d193824441ba685b71b825c7a2 = L.circle(
+                [-22.328474, 24.684866],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_c06f28d193824441ba685b71b825c7a2.bindTooltip(
+                `<div>
+                     <li><bold>Country : Botswana<li><bold>Confirmed : 399<li><bold>Active : 360<li><bold>Deaths : 1<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d91ad546da264ce591e7174ec91d60b5 = L.circle(
+                [-14.235004, -51.92528],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 698254.7367524233, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d91ad546da264ce591e7174ec91d60b5.bindTooltip(
+                `<div>
+                     <li><bold>Country : Brazil<li><bold>Confirmed : 1926824<li><bold>Active : 529266<li><bold>Deaths : 74133<li><bold>New Cases : 41857<li><bold>New Death : 1300<li><bold>New Recovered : 32174
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bedd7255f8e0488ba783282b296f3717 = L.circle(
+                [4.535277, 114.72766899999999],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7371928188465517, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_bedd7255f8e0488ba783282b296f3717.bindTooltip(
+                `<div>
+                     <li><bold>Country : Brunei<li><bold>Confirmed : 141<li><bold>Active : 0<li><bold>Deaths : 3<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4e87687e42e0478aa63b3960163da835 = L.circle(
+                [42.733883, 25.48583],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 875.2733846616919, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_4e87687e42e0478aa63b3960163da835.bindTooltip(
+                `<div>
+                     <li><bold>Country : Bulgaria<li><bold>Confirmed : 7645<li><bold>Active : 3699<li><bold>Deaths : 283<li><bold>New Cases : 234<li><bold>New Death : 7<li><bold>New Recovered : 146
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_00431bc061404877b4fca0040a1e0af4 = L.circle(
+                [12.238333, -1.561593],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 117.25491158063417, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_00431bc061404877b4fca0040a1e0af4.bindTooltip(
+                `<div>
+                     <li><bold>Country : Burkina Faso<li><bold>Confirmed : 1037<li><bold>Active : 111<li><bold>Deaths : 53<li><bold>New Cases : 1<li><bold>New Death : 0<li><bold>New Recovered : 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e49e3d1c74d844308edbe3c6145d4860 = L.circle(
+                [21.9162, 95.956],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.585814486631532, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_e49e3d1c74d844308edbe3c6145d4860.bindTooltip(
+                `<div>
+                     <li><bold>Country : Burma<li><bold>Confirmed : 337<li><bold>Active : 70<li><bold>Deaths : 6<li><bold>New Cases : 1<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0cbfe4a037cc427f9685f216a3a2d212 = L.circle(
+                [-3.3730559999999996, 29.918885999999997],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_0cbfe4a037cc427f9685f216a3a2d212.bindTooltip(
+                `<div>
+                     <li><bold>Country : Burundi<li><bold>Confirmed : 269<li><bold>Active : 61<li><bold>Deaths : 1<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7d07616af3a749dc994eab30adebdbc6 = L.circle(
+                [16.5388, -23.0418],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 34.237679419025696, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_7d07616af3a749dc994eab30adebdbc6.bindTooltip(
+                `<div>
+                     <li><bold>Country : Cabo Verde<li><bold>Confirmed : 1722<li><bold>Active : 931<li><bold>Deaths : 19<li><bold>New Cases : 24<li><bold>New Death : 0<li><bold>New Recovered : 24
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_939b02e904bd42fab9cb6d4d5daece3d = L.circle(
+                [12.565679, 104.990963],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_939b02e904bd42fab9cb6d4d5daece3d.bindTooltip(
+                `<div>
+                     <li><bold>Country : Cambodia<li><bold>Confirmed : 165<li><bold>Active : 32<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_73e72d69f9a04690a4a14f83788754ed = L.circle(
+                [7.369722, 12.354722],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1164.4298722669391, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_73e72d69f9a04690a4a14f83788754ed.bindTooltip(
+                `<div>
+                     <li><bold>Country : Cameroon<li><bold>Confirmed : 15173<li><bold>Active : 2886<li><bold>Deaths : 359<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c1a59cdf21644ffead70dec7e15b5f5f = L.circle(
+                [56.130366, -106.34677099999999],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 54447.56733788055, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_c1a59cdf21644ffead70dec7e15b5f5f.bindTooltip(
+                `<div>
+                     <li><bold>Country : Canada<li><bold>Confirmed : 110337<li><bold>Active : 27780<li><bold>Deaths : 8844<li><bold>New Cases : 366<li><bold>New Death : 9<li><bold>New Recovered : 332
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_74c01e82a72a48aa9c6d6dc4a3fdcdd2 = L.circle(
+                [6.611111, 20.939444],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 117.25491158063417, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_74c01e82a72a48aa9c6d6dc4a3fdcdd2.bindTooltip(
+                `<div>
+                     <li><bold>Country : Central African Republic<li><bold>Confirmed : 4356<li><bold>Active : 3074<li><bold>Deaths : 53<li><bold>New Cases : 35<li><bold>New Death : 0<li><bold>New Recovered : 21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6cdec3eeab534ca3a5de05ca130bc449 = L.circle(
+                [15.454166, 18.732207],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 177.85804573344834, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_6cdec3eeab534ca3a5de05ca130bc449.bindTooltip(
+                `<div>
+                     <li><bold>Country : Chad<li><bold>Confirmed : 884<li><bold>Active : 11<li><bold>Deaths : 75<li><bold>New Cases : 4<li><bold>New Death : 0<li><bold>New Recovered : 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_971f2be1f7154e0dba970365a38ac2da = L.circle(
+                [-35.675146999999996, -71.542969],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 41613.05284745099, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_971f2be1f7154e0dba970365a38ac2da.bindTooltip(
+                `<div>
+                     <li><bold>Country : Chile<li><bold>Confirmed : 319493<li><bold>Active : 23204<li><bold>Deaths : 7069<li><bold>New Cases : 1836<li><bold>New Death : 45<li><bold>New Recovered : 2664
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a4bb76b5792b4d5a91f6c057d04c480e = L.circle(
+                [35.86166, 104.195397],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25121.534467377314, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_a4bb76b5792b4d5a91f6c057d04c480e.bindTooltip(
+                `<div>
+                     <li><bold>Country : China<li><bold>Confirmed : 85226<li><bold>Active : 617<li><bold>Deaths : 4642<li><bold>New Cases : 109<li><bold>New Death : 1<li><bold>New Recovered : 60
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fbd87214cce942e3b6427046f6b4f433 = L.circle(
+                [4.570868, -74.297333],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32729.862350784773, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_fbd87214cce942e3b6427046f6b4f433.bindTooltip(
+                `<div>
+                     <li><bold>Country : Colombia<li><bold>Confirmed : 154277<li><bold>Active : 82681<li><bold>Deaths : 5787<li><bold>New Cases : 3832<li><bold>New Death : 153<li><bold>New Recovered : 2358
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c298dbefde1943fcae94f6cfe54dfe42 = L.circle(
+                [-4.5216660000000015, 21.964255],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 101.5120105529299, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_c298dbefde1943fcae94f6cfe54dfe42.bindTooltip(
+                `<div>
+                     <li><bold>Country : Congo (Brazzaville)<li><bold>Confirmed : 2028<li><bold>Active : 1392<li><bold>Deaths : 47<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f728182e6500430db67f7ff7eb05394c = L.circle(
+                [-1.142502, 15.852951],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 542.630650368798, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_f728182e6500430db67f7ff7eb05394c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Congo (Kinshasa)<li><bold>Confirmed : 8135<li><bold>Active : 3997<li><bold>Deaths : 190<li><bold>New Cases : 60<li><bold>New Death : 0<li><bold>New Recovered : 328
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a9dfdf605da24eb4a1987bd583f27aa5 = L.circle(
+                [9.748917, -83.753428],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 76.18019304970512, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_a9dfdf605da24eb4a1987bd583f27aa5.bindTooltip(
+                `<div>
+                     <li><bold>Country : Costa Rica<li><bold>Confirmed : 8482<li><bold>Active : 6004<li><bold>Deaths : 37<li><bold>New Cases : 446<li><bold>New Death : 3<li><bold>New Recovered : 137
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_23e8fc61270b48b9855859dca9808edf = L.circle(
+                [7.54, -5.3053230000000005],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 212.53140004915323, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_23e8fc61270b48b9855859dca9808edf.bindTooltip(
+                `<div>
+                     <li><bold>Country : Cote d'Ivoire<li><bold>Confirmed : 13037<li><bold>Active : 6042<li><bold>Deaths : 87<li><bold>New Cases : 165<li><bold>New Death : 3<li><bold>New Recovered : 98
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_353d74d31031411fae836b129f1ab4f2 = L.circle(
+                [45.1, 15.2],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 312.62053016368213, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_353d74d31031411fae836b129f1ab4f2.bindTooltip(
+                `<div>
+                     <li><bold>Country : Croatia<li><bold>Confirmed : 3827<li><bold>Active : 1149<li><bold>Deaths : 120<li><bold>New Cases : 52<li><bold>New Death : 1<li><bold>New Recovered : 44
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b658760e7b4a44b1b474d900546a104d = L.circle(
+                [21.521757, -77.78116700000002],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 212.53140004915323, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_b658760e7b4a44b1b474d900546a104d.bindTooltip(
+                `<div>
+                     <li><bold>Country : Cuba<li><bold>Confirmed : 2432<li><bold>Active : 70<li><bold>Deaths : 87<li><bold>New Cases : 4<li><bold>New Death : 0<li><bold>New Recovered : 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1e38521c38264e1389ebceaffb93b76b = L.circle(
+                [35.126413, 33.429859],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 34.237679419025696, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_1e38521c38264e1389ebceaffb93b76b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Cyprus<li><bold>Confirmed : 1023<li><bold>Active : 165<li><bold>Deaths : 19<li><bold>New Cases : 1<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_628332588b4e4e61a2da90a2c9c23707 = L.circle(
+                [49.8175, 15.473],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1148.8782923268725, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_628332588b4e4e61a2da90a2c9c23707.bindTooltip(
+                `<div>
+                     <li><bold>Country : Czechia<li><bold>Confirmed : 13341<li><bold>Active : 4545<li><bold>Deaths : 355<li><bold>New Cases : 103<li><bold>New Death : 2<li><bold>New Recovered : 68
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_92f4b794fb044cef92c97fab27660174 = L.circle(
+                [56.26392, 9.501785],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2199.86384457315, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_92f4b794fb044cef92c97fab27660174.bindTooltip(
+                `<div>
+                     <li><bold>Country : Denmark<li><bold>Confirmed : 13262<li><bold>Active : 291<li><bold>Deaths : 610<li><bold>New Cases : 24<li><bold>New Death : 0<li><bold>New Recovered : 30
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_da65398efd184c74b0c4505acae2311c = L.circle(
+                [-100.0, -100.0],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.71360948035253, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_da65398efd184c74b0c4505acae2311c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Diamond Princess<li><bold>Confirmed : 712<li><bold>Active : 48<li><bold>Deaths : 13<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_813d69649b01436ba50f313666a42ed9 = L.circle(
+                [11.825138, 42.590275],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 125.26381444865618, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_813d69649b01436ba50f313666a42ed9.bindTooltip(
+                `<div>
+                     <li><bold>Country : Djibouti<li><bold>Confirmed : 4979<li><bold>Active : 180<li><bold>Deaths : 56<li><bold>New Cases : 2<li><bold>New Death : 0<li><bold>New Recovered : 14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d8a41fa371c54bce8eac7017b487f700 = L.circle(
+                [15.414999, -61.370976],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d8a41fa371c54bce8eac7017b487f700.bindTooltip(
+                `<div>
+                     <li><bold>Country : Dominica<li><bold>Confirmed : 18<li><bold>Active : 0<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a978bae3c26444e5a9b4d59f62371ca2 = L.circle(
+                [18.735692999999998, -70.162651],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3555.0823958145793, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_a978bae3c26444e5a9b4d59f62371ca2.bindTooltip(
+                `<div>
+                     <li><bold>Country : Dominican Republic<li><bold>Confirmed : 46305<li><bold>Active : 22261<li><bold>Deaths : 910<li><bold>New Cases : 799<li><bold>New Death : 7<li><bold>New Recovered : 693
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3662f9d96f1e4304826720ebee2be8be = L.circle(
+                [-1.8312389999999998, -78.183406],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28323.103418710336, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_3662f9d96f1e4304826720ebee2be8be.bindTooltip(
+                `<div>
+                     <li><bold>Country : Ecuador<li><bold>Confirmed : 69570<li><bold>Active : 33956<li><bold>Deaths : 5130<li><bold>New Cases : 1111<li><bold>New Death : 67<li><bold>New Recovered : 115
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9f5f4015c8044728bc1504631136c24c = L.circle(
+                [26.820553000000004, 30.802497999999996],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21062.661849567157, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_9f5f4015c8044728bc1504631136c24c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Egypt<li><bold>Confirmed : 83930<li><bold>Active : 54378<li><bold>Deaths : 4008<li><bold>New Cases : 929<li><bold>New Death : 73<li><bold>New Recovered : 569
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a77d26161432425a95f4ae6896adff4f = L.circle(
+                [13.794185, -88.89653],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 856.74929375903, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_a77d26161432425a95f4ae6896adff4f.bindTooltip(
+                `<div>
+                     <li><bold>Country : El Salvador<li><bold>Confirmed : 10303<li><bold>Active : 4106<li><bold>Deaths : 278<li><bold>New Cases : 325<li><bold>New Death : 11<li><bold>New Recovered : 187
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3241a06dc2c74fffa5bd710efa3ef19f = L.circle(
+                [1.6508009999999995, 10.267895],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 111.96549676880197, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_3241a06dc2c74fffa5bd710efa3ef19f.bindTooltip(
+                `<div>
+                     <li><bold>Country : Equatorial Guinea<li><bold>Confirmed : 3071<li><bold>Active : 2178<li><bold>Deaths : 51<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f0c7f1e92b4b4ca9936a1abf363741d4 = L.circle(
+                [15.179383999999999, 39.78233400000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_f0c7f1e92b4b4ca9936a1abf363741d4.bindTooltip(
+                `<div>
+                     <li><bold>Country : Eritrea<li><bold>Confirmed : 232<li><bold>Active : 125<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6b85018329f545ac8a4cfd7f0cd6944d = L.circle(
+                [58.595271999999994, 25.013607],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 160.92329220505667, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_6b85018329f545ac8a4cfd7f0cd6944d.bindTooltip(
+                `<div>
+                     <li><bold>Country : Estonia<li><bold>Confirmed : 2015<li><bold>Active : 49<li><bold>Deaths : 69<li><bold>New Cases : 1<li><bold>New Death : 0<li><bold>New Recovered : 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_12de0bbce2b649d7b55d9da3bbc92479 = L.circle(
+                [-26.5179414, 31.4659],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36.4112840605216, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_12de0bbce2b649d7b55d9da3bbc92479.bindTooltip(
+                `<div>
+                     <li><bold>Country : Eswatini<li><bold>Confirmed : 1434<li><bold>Active : 719<li><bold>Deaths : 20<li><bold>New Cases : 45<li><bold>New Death : 0<li><bold>New Recovered : 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_caf1c3fc57104af8afb2ecb7daf7d40a = L.circle(
+                [9.145, 40.489672999999996],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 372.92179014274006, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_caf1c3fc57104af8afb2ecb7daf7d40a.bindTooltip(
+                `<div>
+                     <li><bold>Country : Ethiopia<li><bold>Confirmed : 7969<li><bold>Active : 5400<li><bold>Deaths : 139<li><bold>New Cases : 203<li><bold>New Death : 11<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ce81b55c20e2494e9f6a40615786234b = L.circle(
+                [-16.578193, 179.414413],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_ce81b55c20e2494e9f6a40615786234b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Fiji<li><bold>Confirmed : 26<li><bold>Active : 8<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_32c6151a5a5547fbb26a3336fe64ab7f = L.circle(
+                [61.92411, 25.748151],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1048.660905274618, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_32c6151a5a5547fbb26a3336fe64ab7f.bindTooltip(
+                `<div>
+                     <li><bold>Country : Finland<li><bold>Confirmed : 7301<li><bold>Active : 172<li><bold>Deaths : 329<li><bold>New Cases : 6<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ef2d7a8df97f45d1a28c7233797958e0 = L.circle(
+                [46.227638, 2.213749],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 236102.78304938902, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_ef2d7a8df97f45d1a28c7233797958e0.bindTooltip(
+                `<div>
+                     <li><bold>Country : France<li><bold>Confirmed : 209640<li><bold>Active : 100886<li><bold>Deaths : 30032<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_154823c069fa4b4db3325f826833b915 = L.circle(
+                [-0.803689, 11.609444],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 98.9257605893124, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_154823c069fa4b4db3325f826833b915.bindTooltip(
+                `<div>
+                     <li><bold>Country : Gabon<li><bold>Confirmed : 6026<li><bold>Active : 2505<li><bold>Deaths : 46<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_88073576943f4a5ca47ded895603d156 = L.circle(
+                [13.443182, -15.310139000000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7371928188465517, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_88073576943f4a5ca47ded895603d156.bindTooltip(
+                `<div>
+                     <li><bold>Country : Gambia<li><bold>Confirmed : 64<li><bold>Active : 27<li><bold>Deaths : 3<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_089c4f55145f4f378a97a7d46140853c = L.circle(
+                [42.315407, 43.356891999999995],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.78157891381218, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_089c4f55145f4f378a97a7d46140853c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Georgia<li><bold>Confirmed : 999<li><bold>Active : 114<li><bold>Deaths : 15<li><bold>New Cases : 4<li><bold>New Death : 0<li><bold>New Recovered : 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_32446ecabb274a50a8552f643688f0d8 = L.circle(
+                [51.165690999999995, 10.451526],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 56180.838153506884, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_32446ecabb274a50a8552f643688f0d8.bindTooltip(
+                `<div>
+                     <li><bold>Country : Germany<li><bold>Confirmed : 200456<li><bold>Active : 6278<li><bold>Deaths : 9078<li><bold>New Cases : 276<li><bold>New Death : 4<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_53f01585c8074f2399aaf06a64c48e6c = L.circle(
+                [7.9465270000000015, -1.0231940000000002],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 372.92179014274006, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_53f01585c8074f2399aaf06a64c48e6c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Ghana<li><bold>Confirmed : 24988<li><bold>Active : 3782<li><bold>Deaths : 139<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3b036e85ff8d4a1ba277d0444346372b = L.circle(
+                [39.074208, 21.824312],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 552.9282391719064, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_3b036e85ff8d4a1ba277d0444346372b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Greece<li><bold>Confirmed : 3883<li><bold>Active : 2316<li><bold>Deaths : 193<li><bold>New Cases : 57<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_028a4cb2a83044a59958be74a22041af = L.circle(
+                [12.262775999999999, -61.604170999999994],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_028a4cb2a83044a59958be74a22041af.bindTooltip(
+                `<div>
+                     <li><bold>Country : Grenada<li><bold>Confirmed : 23<li><bold>Active : 0<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_239241c55c9d471eae1c464efc59f0ce = L.circle(
+                [15.783470999999999, -90.23075899999999],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5464.282966421971, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_239241c55c9d471eae1c464efc59f0ce.bindTooltip(
+                `<div>
+                     <li><bold>Country : Guatemala<li><bold>Confirmed : 30872<li><bold>Active : 25117<li><bold>Deaths : 1302<li><bold>New Cases : 1130<li><bold>New Death : 58<li><bold>New Recovered : 132
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4940d4b54fa04180931aa5e676c96d24 = L.circle(
+                [9.945587, -9.696645],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 78.65753205510133, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_4940d4b54fa04180931aa5e676c96d24.bindTooltip(
+                `<div>
+                     <li><bold>Country : Guinea<li><bold>Confirmed : 6200<li><bold>Active : 1211<li><bold>Deaths : 38<li><bold>New Cases : 59<li><bold>New Death : 1<li><bold>New Recovered : 89
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4f308d86733a49699f150d86ed818885 = L.circle(
+                [11.803749, -15.180413],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 49.88477498225796, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_4f308d86733a49699f150d86ed818885.bindTooltip(
+                `<div>
+                     <li><bold>Country : Guinea-Bissau<li><bold>Confirmed : 1842<li><bold>Active : 1043<li><bold>Deaths : 26<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_646cf36a47224caeb4aa395fee90e81d = L.circle(
+                [4.860416000000002, -58.93018000000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.959785913149386, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_646cf36a47224caeb4aa395fee90e81d.bindTooltip(
+                `<div>
+                     <li><bold>Country : Guyana<li><bold>Confirmed : 308<li><bold>Active : 135<li><bold>Deaths : 17<li><bold>New Cases : 8<li><bold>New Death : 0<li><bold>New Recovered : 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dad2c3366f9f4191820845b3ccbb5fe9 = L.circle(
+                [18.971187, -72.28521500000002],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 379.369956865085, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_dad2c3366f9f4191820845b3ccbb5fe9.bindTooltip(
+                `<div>
+                     <li><bold>Country : Haiti<li><bold>Confirmed : 6727<li><bold>Active : 3564<li><bold>Deaths : 141<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_614e2a37c990405e899823369b5b338e = L.circle(
+                [41.9029, 12.4534],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_614e2a37c990405e899823369b5b338e.bindTooltip(
+                `<div>
+                     <li><bold>Country : Holy See<li><bold>Confirmed : 12<li><bold>Active : 0<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7223c4f11d4048c4842c79447ee2fa20 = L.circle(
+                [15.199998999999998, -86.241905],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2995.659195557564, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_7223c4f11d4048c4842c79447ee2fa20.bindTooltip(
+                `<div>
+                     <li><bold>Country : Honduras<li><bold>Confirmed : 28579<li><bold>Active : 24667<li><bold>Deaths : 789<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_be968f0df3974be1a29626d1a6feb838 = L.circle(
+                [47.162494, 19.503304],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2135.110512578081, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_be968f0df3974be1a29626d1a6feb838.bindTooltip(
+                `<div>
+                     <li><bold>Country : Hungary<li><bold>Confirmed : 4258<li><bold>Active : 557<li><bold>Deaths : 595<li><bold>New Cases : 11<li><bold>New Death : 0<li><bold>New Recovered : 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d8fba091573949ba99d5b7b714910e2d = L.circle(
+                [64.96305100000001, -19.020835],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.848931924611133, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d8fba091573949ba99d5b7b714910e2d.bindTooltip(
+                `<div>
+                     <li><bold>Country : Iceland<li><bold>Confirmed : 1905<li><bold>Active : 13<li><bold>Deaths : 10<li><bold>New Cases : 5<li><bold>New Death : 0<li><bold>New Recovered : 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_57723fb241694415b8eeaa15ef10632f = L.circle(
+                [20.593684, 78.96288],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 183197.9089913953, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_57723fb241694415b8eeaa15ef10632f.bindTooltip(
+                `<div>
+                     <li><bold>Country : India<li><bold>Confirmed : 936181<li><bold>Active : 319840<li><bold>Deaths : 24309<li><bold>New Cases : 29429<li><bold>New Death : 582<li><bold>New Recovered : 20572
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3594444093354f729daa70862cf6ed21 = L.circle(
+                [-0.789275, 113.921327],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19197.677491634604, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_3594444093354f729daa70862cf6ed21.bindTooltip(
+                `<div>
+                     <li><bold>Country : Indonesia<li><bold>Confirmed : 78572<li><bold>Active : 37226<li><bold>Deaths : 3710<li><bold>New Cases : 1591<li><bold>New Death : 54<li><bold>New Recovered : 947
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bcd6999c264c47cd92e7f8fec609a39f = L.circle(
+                [32.427908, 53.68804599999999],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 88129.80944202287, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_bcd6999c264c47cd92e7f8fec609a39f.bindTooltip(
+                `<div>
+                     <li><bold>Country : Iran<li><bold>Confirmed : 262173<li><bold>Active : 23692<li><bold>Deaths : 13211<li><bold>New Cases : 2521<li><bold>New Death : 179<li><bold>New Recovered : 2731
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4658b1dc025e4a6f9a7aae4189ccf821 = L.circle(
+                [33.223191, 43.679291],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16954.12366134083, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_4658b1dc025e4a6f9a7aae4189ccf821.bindTooltip(
+                `<div>
+                     <li><bold>Country : Iraq<li><bold>Confirmed : 81757<li><bold>Active : 27630<li><bold>Deaths : 3345<li><bold>New Cases : 2022<li><bold>New Death : 95<li><bold>New Recovered : 3784
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6b13334b13c84fc581ad0ba44d9cee5c = L.circle(
+                [53.41291, -8.243889999999999],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7770.573760452089, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_6b13334b13c84fc581ad0ba44d9cee5c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Ireland<li><bold>Confirmed : 25670<li><bold>Active : 560<li><bold>Deaths : 1746<li><bold>New Cases : 32<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f8a37fb704ae46c3a835b5ff26a6632d = L.circle(
+                [31.046051000000002, 34.851612],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1211.2915610308949, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_f8a37fb704ae46c3a835b5ff26a6632d.bindTooltip(
+                `<div>
+                     <li><bold>Country : Israel<li><bold>Confirmed : 42360<li><bold>Active : 22324<li><bold>Deaths : 371<li><bold>New Cases : 1728<li><bold>New Death : 6<li><bold>New Recovered : 270
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_14ef93a8f45c48839de5cab320bd7ea7 = L.circle(
+                [41.87194, 12.56738],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 283558.94848841144, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_14ef93a8f45c48839de5cab320bd7ea7.bindTooltip(
+                `<div>
+                     <li><bold>Country : Italy<li><bold>Confirmed : 243344<li><bold>Active : 12919<li><bold>Deaths : 34984<li><bold>New Cases : 114<li><bold>New Death : 17<li><bold>New Recovered : 335
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4058a2a5ea1342f587fb07e89021c383 = L.circle(
+                [18.109581, -77.297508],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.848931924611133, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_4058a2a5ea1342f587fb07e89021c383.bindTooltip(
+                `<div>
+                     <li><bold>Country : Jamaica<li><bold>Confirmed : 762<li><bold>Active : 109<li><bold>Deaths : 10<li><bold>New Cases : 3<li><bold>New Death : 0<li><bold>New Recovered : 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b793cf012f894b789e2c36bb20e3ec26 = L.circle(
+                [36.204824, 138.252924],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3904.757952909543, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_b793cf012f894b789e2c36bb20e3ec26.bindTooltip(
+                `<div>
+                     <li><bold>Country : Japan<li><bold>Confirmed : 22437<li><bold>Active : 3327<li><bold>Deaths : 984<li><bold>New Cases : 312<li><bold>New Death : 0<li><bold>New Recovered : 68
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_82adf95f4db8488b8566e2f8249d57ae = L.circle(
+                [30.585164000000002, 36.238414],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.848931924611133, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_82adf95f4db8488b8566e2f8249d57ae.bindTooltip(
+                `<div>
+                     <li><bold>Country : Jordan<li><bold>Confirmed : 1198<li><bold>Active : 175<li><bold>Deaths : 10<li><bold>New Cases : 15<li><bold>New Death : 0<li><bold>New Recovered : 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c2d73de80263476b9f530dac6d134444 = L.circle(
+                [48.019573, 66.923684],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1226.9801061398198, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_c2d73de80263476b9f530dac6d134444.bindTooltip(
+                `<div>
+                     <li><bold>Country : Kazakhstan<li><bold>Confirmed : 63514<li><bold>Active : 25131<li><bold>Deaths : 375<li><bold>New Cases : 1759<li><bold>New Death : 0<li><bold>New Recovered : 2097
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f0cf94cf25f141ab8f79dc9fb984182e = L.circle(
+                [-0.023559, 37.906193],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 584.0118284868665, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_f0cf94cf25f141ab8f79dc9fb984182e.bindTooltip(
+                `<div>
+                     <li><bold>Country : Kenya<li><bold>Confirmed : 10791<li><bold>Active : 7572<li><bold>Deaths : 202<li><bold>New Cases : 497<li><bold>New Death : 5<li><bold>New Recovered : 71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_40acfffa31bc4097b5b9f1b296ef9260 = L.circle(
+                [42.602636, 20.902977],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 275.49169213517075, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_40acfffa31bc4097b5b9f1b296ef9260.bindTooltip(
+                `<div>
+                     <li><bold>Country : Kosovo<li><bold>Confirmed : 5118<li><bold>Active : 2640<li><bold>Deaths : 108<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d368572d93544cf9a9d9a47ab946a06b = L.circle(
+                [29.311659999999996, 47.481766],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1309.8881796490455, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d368572d93544cf9a9d9a47ab946a06b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Kuwait<li><bold>Confirmed : 56174<li><bold>Active : 9617<li><bold>Deaths : 396<li><bold>New Cases : 666<li><bold>New Death : 3<li><bold>New Recovered : 805
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_93617c64ae7d40598ec8c517528c0c45 = L.circle(
+                [41.20438, 74.766098],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 405.34378834292806, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_93617c64ae7d40598ec8c517528c0c45.bindTooltip(
+                `<div>
+                     <li><bold>Country : Kyrgyzstan<li><bold>Confirmed : 11444<li><bold>Active : 7757<li><bold>Deaths : 149<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d143bf768f6a41beada004f928cac1e6 = L.circle(
+                [19.856270000000002, 102.495496],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d143bf768f6a41beada004f928cac1e6.bindTooltip(
+                `<div>
+                     <li><bold>Country : Laos<li><bold>Confirmed : 19<li><bold>Active : 0<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_04eb8e971c2f4b168083b00ab5431108 = L.circle(
+                [56.879635, 24.603189],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 61.60756339459819, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_04eb8e971c2f4b168083b00ab5431108.bindTooltip(
+                `<div>
+                     <li><bold>Country : Latvia<li><bold>Confirmed : 1174<li><bold>Active : 121<li><bold>Deaths : 31<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4183d4b182114faaa32c420548a867ed = L.circle(
+                [33.854721000000005, 35.862285],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 76.18019304970512, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_4183d4b182114faaa32c420548a867ed.bindTooltip(
+                `<div>
+                     <li><bold>Country : Lebanon<li><bold>Confirmed : 2451<li><bold>Active : 962<li><bold>Deaths : 37<li><bold>New Cases : 32<li><bold>New Death : 1<li><bold>New Recovered : 29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_979a1b60add64e6ba0813d811352a84f = L.circle(
+                [6.4280550000000005, -9.429499],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 111.96549676880197, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_979a1b60add64e6ba0813d811352a84f.bindTooltip(
+                `<div>
+                     <li><bold>Country : Liberia<li><bold>Confirmed : 1024<li><bold>Active : 534<li><bold>Deaths : 51<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_eb9edbb5ff074b39a97a9f98a6666016 = L.circle(
+                [26.3351, 17.228331],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 88.69500212860365, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_eb9edbb5ff074b39a97a9f98a6666016.bindTooltip(
+                `<div>
+                     <li><bold>Country : Libya<li><bold>Confirmed : 1563<li><bold>Active : 1151<li><bold>Deaths : 42<li><bold>New Cases : 51<li><bold>New Death : 2<li><bold>New Recovered : 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b61f96f07629406483e1c8ff474426d1 = L.circle(
+                [47.166000000000004, 9.555373],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_b61f96f07629406483e1c8ff474426d1.bindTooltip(
+                `<div>
+                     <li><bold>Country : Liechtenstein<li><bold>Confirmed : 84<li><bold>Active : 2<li><bold>Deaths : 1<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_749df0e0cb004f54897a93f5cfda3526 = L.circle(
+                [55.169438, 23.881275],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 189.3008262480598, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_749df0e0cb004f54897a93f5cfda3526.bindTooltip(
+                `<div>
+                     <li><bold>Country : Lithuania<li><bold>Confirmed : 1875<li><bold>Active : 225<li><bold>Deaths : 79<li><bold>New Cases : 1<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b56ccbaaa520478aa90b3a59b68d0e43 = L.circle(
+                [49.815273, 6.129583],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 284.700070403702, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_b56ccbaaa520478aa90b3a59b68d0e43.bindTooltip(
+                `<div>
+                     <li><bold>Country : Luxembourg<li><bold>Confirmed : 5056<li><bold>Active : 750<li><bold>Deaths : 111<li><bold>New Cases : 100<li><bold>New Death : 0<li><bold>New Recovered : 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_03577334d4db4a38bcf7f566d31f927e = L.circle(
+                [-100.0, -100.0],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2973967099940698, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_03577334d4db4a38bcf7f566d31f927e.bindTooltip(
+                `<div>
+                     <li><bold>Country : MS Zaandam<li><bold>Confirmed : 9<li><bold>Active : 7<li><bold>Deaths : 2<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d2e6c9ba625340adb429ddecea3e3e6a = L.circle(
+                [-18.766947000000002, 46.869107],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 81.14794542121189, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d2e6c9ba625340adb429ddecea3e3e6a.bindTooltip(
+                `<div>
+                     <li><bold>Country : Madagascar<li><bold>Confirmed : 5343<li><bold>Active : 2658<li><bold>Deaths : 39<li><bold>New Cases : 263<li><bold>New Death : 2<li><bold>New Recovered : 152
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_837627cb50104837a30661985389c6c6 = L.circle(
+                [-13.254307999999998, 34.301525],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 83.65116420730185, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_837627cb50104837a30661985389c6c6.bindTooltip(
+                `<div>
+                     <li><bold>Country : Malawi<li><bold>Confirmed : 2497<li><bold>Active : 1662<li><bold>Deaths : 40<li><bold>New Cases : 67<li><bold>New Death : 1<li><bold>New Recovered : 48
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e7cc0b01c23346469e5136aa48b440c6 = L.circle(
+                [4.210483999999999, 101.97576600000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 318.88331548128997, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_e7cc0b01c23346469e5136aa48b440c6.bindTooltip(
+                `<div>
+                     <li><bold>Country : Malaysia<li><bold>Confirmed : 8729<li><bold>Active : 83<li><bold>Deaths : 122<li><bold>New Cases : 4<li><bold>New Death : 0<li><bold>New Recovered : 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_67db8f313f7b4016b0007fce982721af = L.circle(
+                [3.202778, 73.22068],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.733054843014095, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_67db8f313f7b4016b0007fce982721af.bindTooltip(
+                `<div>
+                     <li><bold>Country : Maldives<li><bold>Confirmed : 2801<li><bold>Active : 485<li><bold>Deaths : 14<li><bold>New Cases : 39<li><bold>New Death : 1<li><bold>New Recovered : 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1c04e24c12b74fad95b63d767c2651d3 = L.circle(
+                [17.570692, -3.996166000000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 315.7493348687436, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_1c04e24c12b74fad95b63d767c2651d3.bindTooltip(
+                `<div>
+                     <li><bold>Country : Mali<li><bold>Confirmed : 2423<li><bold>Active : 554<li><bold>Deaths : 121<li><bold>New Cases : 11<li><bold>New Death : 0<li><bold>New Recovered : 18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7b68ac9cc68d4de5ae37df13cc852912 = L.circle(
+                [35.937496, 14.375416],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.966610165238235, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_7b68ac9cc68d4de5ae37df13cc852912.bindTooltip(
+                `<div>
+                     <li><bold>Country : Malta<li><bold>Confirmed : 674<li><bold>Active : 5<li><bold>Deaths : 9<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_766702ff7041453aa7d025a4a838902c = L.circle(
+                [21.00789, -10.940835],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 398.8235562351439, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_766702ff7041453aa7d025a4a838902c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Mauritania<li><bold>Confirmed : 5518<li><bold>Active : 2707<li><bold>Deaths : 147<li><bold>New Cases : 72<li><bold>New Death : 0<li><bold>New Recovered : 163
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c4cedbab7ae74d7cb9788543e53978e1 = L.circle(
+                [-20.348404000000002, 57.552152],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.848931924611133, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_c4cedbab7ae74d7cb9788543e53978e1.bindTooltip(
+                `<div>
+                     <li><bold>Country : Mauritius<li><bold>Confirmed : 342<li><bold>Active : 2<li><bold>Deaths : 10<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_65e1cab13f0241e68a58ba97c312f7ca = L.circle(
+                [23.634501, -102.552784],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 296671.2358036571, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_65e1cab13f0241e68a58ba97c312f7ca.bindTooltip(
+                `<div>
+                     <li><bold>Country : Mexico<li><bold>Confirmed : 311486<li><bold>Active : 29329<li><bold>Deaths : 36327<li><bold>New Cases : 7051<li><bold>New Death : 836<li><bold>New Recovered : 5729
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_647907682d944a1b9b33ec13031b145c = L.circle(
+                [47.411631, 28.369884999999996],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2396.0151512185057, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_647907682d944a1b9b33ec13031b145c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Moldova<li><bold>Confirmed : 19708<li><bold>Active : 6020<li><bold>Deaths : 655<li><bold>New Cases : 269<li><bold>New Death : 6<li><bold>New Recovered : 240
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_13107091843d484b8443ec66ba163f48 = L.circle(
+                [43.750298, 7.412841],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.278031643091577, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_13107091843d484b8443ec66ba163f48.bindTooltip(
+                `<div>
+                     <li><bold>Country : Monaco<li><bold>Confirmed : 109<li><bold>Active : 8<li><bold>Deaths : 4<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fda0c126c7464689a6c1bd5d615ff1da = L.circle(
+                [46.862496, 103.84665600000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_fda0c126c7464689a6c1bd5d615ff1da.bindTooltip(
+                `<div>
+                     <li><bold>Country : Mongolia<li><bold>Confirmed : 261<li><bold>Active : 54<li><bold>Deaths : 0<li><bold>New Cases : 18<li><bold>New Death : 0<li><bold>New Recovered : 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8dfca029de4946c6a206a42b4a828952 = L.circle(
+                [42.708678000000006, 19.37439],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 45.316200542155286, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_8dfca029de4946c6a206a42b4a828952.bindTooltip(
+                `<div>
+                     <li><bold>Country : Montenegro<li><bold>Confirmed : 1287<li><bold>Active : 933<li><bold>Deaths : 24<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_73f9fa7023bb49fab8a4edabc5b002d0 = L.circle(
+                [31.791702, -7.09262],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 779.6860213196339, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_73f9fa7023bb49fab8a4edabc5b002d0.bindTooltip(
+                `<div>
+                     <li><bold>Country : Morocco<li><bold>Confirmed : 16097<li><bold>Active : 2398<li><bold>Deaths : 257<li><bold>New Cases : 161<li><bold>New Death : 2<li><bold>New Recovered : 508
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_61a6a902b9b34ecab6c00b2ab3d9a7d1 = L.circle(
+                [-18.665695, 35.529562],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.966610165238235, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_61a6a902b9b34ecab6c00b2ab3d9a7d1.bindTooltip(
+                `<div>
+                     <li><bold>Country : Mozambique<li><bold>Confirmed : 1268<li><bold>Active : 886<li><bold>Deaths : 9<li><bold>New Cases : 49<li><bold>New Death : 0<li><bold>New Recovered : 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_87a68db287174b41a60769958bd53996 = L.circle(
+                [-22.957639999999998, 18.49041],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2973967099940698, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_87a68db287174b41a60769958bd53996.bindTooltip(
+                `<div>
+                     <li><bold>Country : Namibia<li><bold>Confirmed : 864<li><bold>Active : 833<li><bold>Deaths : 2<li><bold>New Cases : 3<li><bold>New Death : 1<li><bold>New Recovered : 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5b95bad590fb4c61bac546eeebc9f895 = L.circle(
+                [28.394857000000002, 84.12400799999998],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 78.65753205510133, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_5b95bad590fb4c61bac546eeebc9f895.bindTooltip(
+                `<div>
+                     <li><bold>Country : Nepal<li><bold>Confirmed : 17061<li><bold>Active : 6695<li><bold>Deaths : 38<li><bold>New Cases : 116<li><bold>New Death : 0<li><bold>New Recovered : 34
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9c54791ccbd24769bd32dd83930c7f45 = L.circle(
+                [52.132633, 5.291266],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35236.19382773311, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_9c54791ccbd24769bd32dd83930c7f45.bindTooltip(
+                `<div>
+                     <li><bold>Country : Netherlands<li><bold>Confirmed : 51362<li><bold>Active : 45015<li><bold>Deaths : 6154<li><bold>New Cases : 54<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_16b61f51e15f471e8b97978715f65780 = L.circle(
+                [-40.900557, 174.88597099999996],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40.82321619767785, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_16b61f51e15f471e8b97978715f65780.bindTooltip(
+                `<div>
+                     <li><bold>Country : New Zealand<li><bold>Confirmed : 1547<li><bold>Active : 27<li><bold>Deaths : 22<li><bold>New Cases : 2<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d8c0584e1d5849c9ae004667705b7db7 = L.circle(
+                [12.865416, -85.207229],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 248.17740177127587, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d8c0584e1d5849c9ae004667705b7db7.bindTooltip(
+                `<div>
+                     <li><bold>Country : Nicaragua<li><bold>Confirmed : 3147<li><bold>Active : 766<li><bold>Deaths : 99<li><bold>New Cases : 301<li><bold>New Death : 8<li><bold>New Recovered : 289
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_403fa4d300cf4e98ae4b333ebfd22bd9 = L.circle(
+                [17.607789, 8.081666],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 158.12869806985174, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_403fa4d300cf4e98ae4b333ebfd22bd9.bindTooltip(
+                `<div>
+                     <li><bold>Country : Niger<li><bold>Confirmed : 1099<li><bold>Active : 39<li><bold>Deaths : 68<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_636368f8799c4dd2b16a7d94622f8c30 = L.circle(
+                [9.081999, 8.675277000000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2836.9103715094066, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_636368f8799c4dd2b16a7d94622f8c30.bindTooltip(
+                `<div>
+                     <li><bold>Country : Nigeria<li><bold>Confirmed : 33616<li><bold>Active : 19070<li><bold>Deaths : 754<li><bold>New Cases : 463<li><bold>New Death : 10<li><bold>New Recovered : 121
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a7e4819527964ed28ff8e1c4d3feb05d = L.circle(
+                [41.6086, 21.7453],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1282.1520219852835, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_a7e4819527964ed28ff8e1c4d3feb05d.bindTooltip(
+                `<div>
+                     <li><bold>Country : North Macedonia<li><bold>Confirmed : 8332<li><bold>Active : 3475<li><bold>Deaths : 389<li><bold>New Cases : 135<li><bold>New Death : 4<li><bold>New Recovered : 142
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9e67a47006e44dbeb2dc5d906449d36b = L.circle(
+                [60.472024, 8.468946],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 765.1465518103089, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_9e67a47006e44dbeb2dc5d906449d36b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Norway<li><bold>Confirmed : 9001<li><bold>Active : 610<li><bold>Deaths : 253<li><bold>New Cases : 17<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6e468649a56548c98fe8d7091b5aa2e5 = L.circle(
+                [21.512583, 55.92325500000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 838.2917197981482, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_6e468649a56548c98fe8d7091b5aa2e5.bindTooltip(
+                `<div>
+                     <li><bold>Country : Oman<li><bold>Confirmed : 59568<li><bold>Active : 21308<li><bold>Deaths : 273<li><bold>New Cases : 1389<li><bold>New Death : 14<li><bold>New Recovered : 730
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d89f5c1c220b496d83b7673cb9ea033c = L.circle(
+                [30.375321000000003, 69.345116],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30027.530646598832, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d89f5c1c220b496d83b7673cb9ea033c.bindTooltip(
+                `<div>
+                     <li><bold>Country : Pakistan<li><bold>Confirmed : 255769<li><bold>Active : 77573<li><bold>Deaths : 5386<li><bold>New Cases : 2165<li><bold>New Death : 66<li><bold>New Recovered : 2154
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_656ecb292b7249b4b560ba9a1fa994b5 = L.circle(
+                [8.537981, -80.782127],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3790.752932802853, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_656ecb292b7249b4b560ba9a1fa994b5.bindTooltip(
+                `<div>
+                     <li><bold>Country : Panama<li><bold>Confirmed : 48096<li><bold>Active : 22469<li><bold>Deaths : 960<li><bold>New Cases : 923<li><bold>New Death : 28<li><bold>New Recovered : 748
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_521f69d9061247ef81a9f153be585f29 = L.circle(
+                [-6.314993, 143.95555],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_521f69d9061247ef81a9f153be585f29.bindTooltip(
+                `<div>
+                     <li><bold>Country : Papua New Guinea<li><bold>Confirmed : 11<li><bold>Active : 3<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b9890fcbc512422191929fb18c19e38b = L.circle(
+                [-23.442503, -58.44383199999999],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 47.59134846789696, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_b9890fcbc512422191929fb18c19e38b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Paraguay<li><bold>Confirmed : 3074<li><bold>Active : 1741<li><bold>Deaths : 25<li><bold>New Cases : 94<li><bold>New Death : 0<li><bold>New Recovered : 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5b390f1c95f049a7a92e55d2b6683e40 = L.circle(
+                [-9.189967, -75.015152],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80328.40320483512, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_5b390f1c95f049a7a92e55d2b6683e40.bindTooltip(
+                `<div>
+                     <li><bold>Country : Peru<li><bold>Confirmed : 333867<li><bold>Active : 98377<li><bold>Deaths : 12229<li><bold>New Cases : 3744<li><bold>New Death : 175<li><bold>New Recovered : 2253
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2e56c524fcb44ca7853c29d7e3ce2609 = L.circle(
+                [12.879721, 121.77401699999999],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7013.264637704566, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_2e56c524fcb44ca7853c29d7e3ce2609.bindTooltip(
+                `<div>
+                     <li><bold>Country : Philippines<li><bold>Confirmed : 57545<li><bold>Active : 35483<li><bold>Deaths : 1603<li><bold>New Cases : 539<li><bold>New Death : 4<li><bold>New Recovered : 88
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_37f67127081b46b7a92f3c081426147b = L.circle(
+                [51.919438, 19.145135999999997],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6934.5869458060915, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_37f67127081b46b7a92f3c081426147b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Poland<li><bold>Confirmed : 38457<li><bold>Active : 9113<li><bold>Deaths : 1588<li><bold>New Cases : 267<li><bold>New Death : 12<li><bold>New Recovered : 241
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_69e409b20bc04a74bb93c8fc09505901 = L.circle(
+                [39.399871999999995, -8.224454],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7355.890497767614, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_69e409b20bc04a74bb93c8fc09505901.bindTooltip(
+                `<div>
+                     <li><bold>Country : Portugal<li><bold>Confirmed : 47051<li><bold>Active : 13833<li><bold>Deaths : 1668<li><bold>New Cases : 233<li><bold>New Death : 6<li><bold>New Recovered : 485
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1bb7f9768cc74fcfa3f6db50957f1e78 = L.circle(
+                [25.354826, 51.183884],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 408.61048911399905, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_1bb7f9768cc74fcfa3f6db50957f1e78.bindTooltip(
+                `<div>
+                     <li><bold>Country : Qatar<li><bold>Confirmed : 104533<li><bold>Active : 3223<li><bold>Deaths : 150<li><bold>New Cases : 517<li><bold>New Death : 1<li><bold>New Recovered : 533
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_91dc5bd3e06f4745b840e6f7db31f7c7 = L.circle(
+                [45.943160999999996, 24.96676],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8768.771001737741, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_91dc5bd3e06f4745b840e6f7db31f7c7.bindTooltip(
+                `<div>
+                     <li><bold>Country : Romania<li><bold>Confirmed : 33585<li><bold>Active : 9851<li><bold>Deaths : 1931<li><bold>New Cases : 637<li><bold>New Death : 30<li><bold>New Recovered : 111
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bc20118ff3614f648676566a141d9a67 = L.circle(
+                [61.52401, 105.31875600000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75372.82422036493, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_bc20118ff3614f648676566a141d9a67.bindTooltip(
+                `<div>
+                     <li><bold>Country : Russia<li><bold>Confirmed : 738787<li><bold>Active : 215232<li><bold>Deaths : 11597<li><bold>New Cases : 6240<li><bold>New Death : 175<li><bold>New Recovered : 8790
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4ada235debc946a39b04ca0b15b7bf13 = L.circle(
+                [-1.940278, 29.873888],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.278031643091577, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_4ada235debc946a39b04ca0b15b7bf13.bindTooltip(
+                `<div>
+                     <li><bold>Country : Rwanda<li><bold>Confirmed : 1416<li><bold>Active : 675<li><bold>Deaths : 4<li><bold>New Cases : 38<li><bold>New Death : 0<li><bold>New Recovered : 27
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b0d85e9a7f0744e3b130e43e0055d917 = L.circle(
+                [17.357822, -62.782998],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_b0d85e9a7f0744e3b130e43e0055d917.bindTooltip(
+                `<div>
+                     <li><bold>Country : Saint Kitts and Nevis<li><bold>Confirmed : 17<li><bold>Active : 2<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_69c771b5f05441f59ec6332ae22b81d3 = L.circle(
+                [13.909444, -60.97889300000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_69c771b5f05441f59ec6332ae22b81d3.bindTooltip(
+                `<div>
+                     <li><bold>Country : Saint Lucia<li><bold>Confirmed : 22<li><bold>Active : 3<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_faf215878094420b8cd94ff48bf217be = L.circle(
+                [12.984305, -61.287228000000006],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_faf215878094420b8cd94ff48bf217be.bindTooltip(
+                `<div>
+                     <li><bold>Country : Saint Vincent and the Grenadines<li><bold>Confirmed : 35<li><bold>Active : 6<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9d22a0ea393d41e080ed3559ea458135 = L.circle(
+                [43.94236, 12.457777],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 88.69500212860365, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_9d22a0ea393d41e080ed3559ea458135.bindTooltip(
+                `<div>
+                     <li><bold>Country : San Marino<li><bold>Confirmed : 699<li><bold>Active : 1<li><bold>Deaths : 42<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fb06c502c8924fd2b83c413c59d7abd5 = L.circle(
+                [0.1864, 6.6131],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.733054843014095, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_fb06c502c8924fd2b83c413c59d7abd5.bindTooltip(
+                `<div>
+                     <li><bold>Country : Sao Tome and Principe<li><bold>Confirmed : 732<li><bold>Active : 432<li><bold>Deaths : 14<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fe9ddd76ed2640e6b717ee51d5f51c26 = L.circle(
+                [23.885942, 45.079162],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10720.303822086827, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_fe9ddd76ed2640e6b717ee51d5f51c26.bindTooltip(
+                `<div>
+                     <li><bold>Country : Saudi Arabia<li><bold>Confirmed : 237803<li><bold>Active : 57960<li><bold>Deaths : 2283<li><bold>New Cases : 2692<li><bold>New Death : 40<li><bold>New Recovered : 7718
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_321a17586db64ae795b1e1bbf71d5ee3 = L.circle(
+                [14.497401000000002, -14.452361999999999],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 408.61048911399905, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_321a17586db64ae795b1e1bbf71d5ee3.bindTooltip(
+                `<div>
+                     <li><bold>Country : Senegal<li><bold>Confirmed : 8243<li><bold>Active : 2513<li><bold>Deaths : 150<li><bold>New Cases : 45<li><bold>New Death : 0<li><bold>New Recovered : 66
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f78d04150b2a4c20bce56338998d7f22 = L.circle(
+                [44.016521000000004, 21.005859],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1397.6921890296715, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_f78d04150b2a4c20bce56338998d7f22.bindTooltip(
+                `<div>
+                     <li><bold>Country : Serbia<li><bold>Confirmed : 18983<li><bold>Active : 4574<li><bold>Deaths : 418<li><bold>New Cases : 344<li><bold>New Death : 13<li><bold>New Recovered : 51
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1e9987f3c0354b1bb282f24e0bdb32f3 = L.circle(
+                [-4.679574, 55.491977],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_1e9987f3c0354b1bb282f24e0bdb32f3.bindTooltip(
+                `<div>
+                     <li><bold>Country : Seychelles<li><bold>Confirmed : 100<li><bold>Active : 89<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_954ed0385ef9483a859f3991a80e4aa9 = L.circle(
+                [8.460555000000001, -11.779889],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 147.03338943962046, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_954ed0385ef9483a859f3991a80e4aa9.bindTooltip(
+                `<div>
+                     <li><bold>Country : Sierra Leone<li><bold>Confirmed : 1651<li><bold>Active : 397<li><bold>Deaths : 64<li><bold>New Cases : 9<li><bold>New Death : 1<li><bold>New Recovered : 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3e980f51057241808104eed7742805a4 = L.circle(
+                [1.352083, 103.819836],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52.19591521315758, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_3e980f51057241808104eed7742805a4.bindTooltip(
+                `<div>
+                     <li><bold>Country : Singapore<li><bold>Confirmed : 46630<li><bold>Active : 3866<li><bold>Deaths : 27<li><bold>New Cases : 347<li><bold>New Death : 1<li><bold>New Recovered : 196
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9f60d38acdef4532af373c9b99768692 = L.circle(
+                [48.669026, 19.699023999999998],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 54.52424211444941, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_9f60d38acdef4532af373c9b99768692.bindTooltip(
+                `<div>
+                     <li><bold>Country : Slovakia<li><bold>Confirmed : 1908<li><bold>Active : 387<li><bold>Deaths : 28<li><bold>New Cases : 6<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ada82d5a3fb84524b78400c4e04af85b = L.circle(
+                [46.151241, 14.995463],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 284.700070403702, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_ada82d5a3fb84524b78400c4e04af85b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Slovenia<li><bold>Confirmed : 1859<li><bold>Active : 260<li><bold>Deaths : 111<li><bold>New Cases : 10<li><bold>New Death : 0<li><bold>New Recovered : 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c0397fc4a6c146bbadb1980f74872fa9 = L.circle(
+                [5.152149, 46.199616],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 230.23934350492604, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_c0397fc4a6c146bbadb1980f74872fa9.bindTooltip(
+                `<div>
+                     <li><bold>Country : Somalia<li><bold>Confirmed : 3076<li><bold>Active : 1603<li><bold>Deaths : 93<li><bold>New Cases : 4<li><bold>New Death : 0<li><bold>New Recovered : 37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cb8886ade9154f5b8dc4c81a07667ddc = L.circle(
+                [-30.559482, 22.937506],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23211.738348131043, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_cb8886ade9154f5b8dc4c81a07667ddc.bindTooltip(
+                `<div>
+                     <li><bold>Country : South Africa<li><bold>Confirmed : 298292<li><bold>Active : 147667<li><bold>Deaths : 4346<li><bold>New Cases : 10496<li><bold>New Death : 174<li><bold>New Recovered : 8038
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4af1bde680494067a6c75a670a51350a = L.circle(
+                [6.877000000000002, 31.307],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 86.16693160930716, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_4af1bde680494067a6c75a670a51350a.bindTooltip(
+                `<div>
+                     <li><bold>Country : South Sudan<li><bold>Confirmed : 2148<li><bold>Active : 1774<li><bold>Deaths : 41<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0c43e55d97374490bbc2af92cf2d1d1a = L.circle(
+                [40.463667, -3.7492199999999998],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 220875.29173280383, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_0c43e55d97374490bbc2af92cf2d1d1a.bindTooltip(
+                `<div>
+                     <li><bold>Country : Spain<li><bold>Confirmed : 256619<li><bold>Active : 77834<li><bold>Deaths : 28409<li><bold>New Cases : 666<li><bold>New Death : 3<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f7cd0c952748407b85d78acf6729c4db = L.circle(
+                [7.873054, 80.77179699999998],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.769336928223957, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_f7cd0c952748407b85d78acf6729c4db.bindTooltip(
+                `<div>
+                     <li><bold>Country : Sri Lanka<li><bold>Confirmed : 2665<li><bold>Active : 666<li><bold>Deaths : 11<li><bold>New Cases : 19<li><bold>New Death : 0<li><bold>New Recovered : 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a407aeec19e84ef1b91e8b83b68f0c2f = L.circle(
+                [12.862807, 30.217636],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2413.584440918118, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_a407aeec19e84ef1b91e8b83b68f0c2f.bindTooltip(
+                `<div>
+                     <li><bold>Country : Sudan<li><bold>Confirmed : 10417<li><bold>Active : 4179<li><bold>Deaths : 659<li><bold>New Cases : 101<li><bold>New Death : 2<li><bold>New Recovered : 176
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e84e768aa8cb46a28722e6cafe0f5182 = L.circle(
+                [3.9193050000000014, -56.02778299999999],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.08684424338806, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_e84e768aa8cb46a28722e6cafe0f5182.bindTooltip(
+                `<div>
+                     <li><bold>Country : Suriname<li><bold>Confirmed : 801<li><bold>Active : 240<li><bold>Deaths : 18<li><bold>New Cases : 21<li><bold>New Death : 0<li><bold>New Recovered : 17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b265f033442d45c08a1648bb513ce744 = L.circle(
+                [60.128161, 18.643501],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31094.37705533381, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_b265f033442d45c08a1648bb513ce744.bindTooltip(
+                `<div>
+                     <li><bold>Country : Sweden<li><bold>Confirmed : 76001<li><bold>Active : 70456<li><bold>Deaths : 5545<li><bold>New Cases : 175<li><bold>New Death : 9<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_25fe0bc0e4c24fe79abe978e0b810497 = L.circle(
+                [46.818188, 8.227511999999999],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8970.778074337562, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_25fe0bc0e4c24fe79abe978e0b810497.bindTooltip(
+                `<div>
+                     <li><bold>Country : Switzerland<li><bold>Confirmed : 33016<li><bold>Active : 1248<li><bold>Deaths : 1968<li><bold>New Cases : 70<li><bold>New Death : 0<li><bold>New Recovered : 200
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_301299177551463ebbfd6bd7744bfa0b = L.circle(
+                [34.802075, 38.99681500000001],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.60674203230342, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_301299177551463ebbfd6bd7744bfa0b.bindTooltip(
+                `<div>
+                     <li><bold>Country : Syria<li><bold>Confirmed : 439<li><bold>Active : 280<li><bold>Deaths : 21<li><bold>New Cases : 22<li><bold>New Death : 2<li><bold>New Recovered : 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1ff9b928c96c4c14ae72dd4fbbcfaf5a = L.circle(
+                [23.6978, 120.9605],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.330412131161864, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_1ff9b928c96c4c14ae72dd4fbbcfaf5a.bindTooltip(
+                `<div>
+                     <li><bold>Country : Taiwan*<li><bold>Confirmed : 451<li><bold>Active : 4<li><bold>Deaths : 7<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cbc4bfd56c074490a7ebf72fa64142fb = L.circle(
+                [-6.369028, 34.888822],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.60674203230342, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_cbc4bfd56c074490a7ebf72fa64142fb.bindTooltip(
+                `<div>
+                     <li><bold>Country : Tanzania<li><bold>Confirmed : 509<li><bold>Active : 305<li><bold>Deaths : 21<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0fc6c68b03d54feca3718c2cb5e9ed00 = L.circle(
+                [15.870032, 100.992541],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 130.65125694907485, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_0fc6c68b03d54feca3718c2cb5e9ed00.bindTooltip(
+                `<div>
+                     <li><bold>Country : Thailand<li><bold>Confirmed : 3227<li><bold>Active : 78<li><bold>Deaths : 58<li><bold>New Cases : 7<li><bold>New Death : 0<li><bold>New Recovered : 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d6f116d7dc114216a897d6fa83c423f9 = L.circle(
+                [-8.874217, 125.727539],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_d6f116d7dc114216a897d6fa83c423f9.bindTooltip(
+                `<div>
+                     <li><bold>Country : Timor-Leste<li><bold>Confirmed : 24<li><bold>Active : 0<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_91f79cdf392646c2b747e303a065af1e = L.circle(
+                [8.619543, 0.824782],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.78157891381218, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_91f79cdf392646c2b747e303a065af1e.bindTooltip(
+                `<div>
+                     <li><bold>Country : Togo<li><bold>Confirmed : 731<li><bold>Active : 188<li><bold>Deaths : 15<li><bold>New Cases : 10<li><bold>New Death : 0<li><bold>New Recovered : 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_959d04a1581b4f53917afbcc46ad4ab9 = L.circle(
+                [10.691803, -61.222503],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.125732532083184, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_959d04a1581b4f53917afbcc46ad4ab9.bindTooltip(
+                `<div>
+                     <li><bold>Country : Trinidad and Tobago<li><bold>Confirmed : 133<li><bold>Active : 1<li><bold>Deaths : 8<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1fe8d647a4f84ceeb53f69cbd2a2c299 = L.circle(
+                [33.886917, 9.537499],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 109.33620739432779, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_1fe8d647a4f84ceeb53f69cbd2a2c299.bindTooltip(
+                `<div>
+                     <li><bold>Country : Tunisia<li><bold>Confirmed : 1306<li><bold>Active : 169<li><bold>Deaths : 50<li><bold>New Cases : 4<li><bold>New Death : 0<li><bold>New Recovered : 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6f0d486cd8e24329a19722742ba4a3e7 = L.circle(
+                [38.963745, 35.243322],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30134.604489939626, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_6f0d486cd8e24329a19722742ba4a3e7.bindTooltip(
+                `<div>
+                     <li><bold>Country : Turkey<li><bold>Confirmed : 214993<li><bold>Active : 12871<li><bold>Deaths : 5402<li><bold>New Cases : 992<li><bold>New Death : 20<li><bold>New Recovered : 1049
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_12d7e3fbf3464ced9a82915b9148e8c0 = L.circle(
+                [37.09024, -95.712891],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1452209.7705353035, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_12d7e3fbf3464ced9a82915b9148e8c0.bindTooltip(
+                `<div>
+                     <li><bold>Country : US<li><bold>Confirmed : 3431574<li><bold>Active : 2246010<li><bold>Deaths : 136466<li><bold>New Cases : 67417<li><bold>New Death : 900<li><bold>New Recovered : 17159
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_069d8d9da7354b628dfdb1ae017f57a6 = L.circle(
+                [1.373333, 32.290275],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_069d8d9da7354b628dfdb1ae017f57a6.bindTooltip(
+                `<div>
+                     <li><bold>Country : Uganda<li><bold>Confirmed : 1040<li><bold>Active : 56<li><bold>Deaths : 0<li><bold>New Cases : 11<li><bold>New Death : 0<li><bold>New Recovered : 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7979f20cba344897937901f975f73769 = L.circle(
+                [48.379433, 31.16558],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6109.964325953863, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_7979f20cba344897937901f975f73769.bindTooltip(
+                `<div>
+                     <li><bold>Country : Ukraine<li><bold>Confirmed : 55931<li><bold>Active : 26481<li><bold>Deaths : 1429<li><bold>New Cases : 646<li><bold>New Death : 14<li><bold>New Recovered : 665
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2bb82bf5580341d69f4380f27c112caf = L.circle(
+                [23.424076, 53.847818000000004],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1071.651974417214, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_2bb82bf5580341d69f4380f27c112caf.bindTooltip(
+                `<div>
+                     <li><bold>Country : United Arab Emirates<li><bold>Confirmed : 55573<li><bold>Active : 9213<li><bold>Deaths : 335<li><bold>New Cases : 375<li><bold>New Death : 1<li><bold>New Recovered : 512
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b970450e877e4daa9f41b48806e82365 = L.circle(
+                [55.378051, -3.435973],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 384121.3603407279, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_b970450e877e4daa9f41b48806e82365.bindTooltip(
+                `<div>
+                     <li><bold>Country : United Kingdom<li><bold>Confirmed : 292931<li><bold>Active : 246493<li><bold>Deaths : 45053<li><bold>New Cases : 1240<li><bold>New Death : 138<li><bold>New Recovered : 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_72e4c5dac36443058b2e023fc28386b3 = L.circle(
+                [-32.522779, -55.765834999999996],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 61.60756339459819, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_72e4c5dac36443058b2e023fc28386b3.bindTooltip(
+                `<div>
+                     <li><bold>Country : Uruguay<li><bold>Confirmed : 997<li><bold>Active : 61<li><bold>Deaths : 31<li><bold>New Cases : 8<li><bold>New Death : 0<li><bold>New Recovered : 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b0ee9feba2564258bb791809b3e49bda = L.circle(
+                [41.377491, 64.585262],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 155.34231151952935, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_b0ee9feba2564258bb791809b3e49bda.bindTooltip(
+                `<div>
+                     <li><bold>Country : Uzbekistan<li><bold>Confirmed : 14085<li><bold>Active : 5691<li><bold>Deaths : 67<li><bold>New Cases : 494<li><bold>New Death : 3<li><bold>New Recovered : 297
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e23a1f07ab93456dadf3bc5372746c2d = L.circle(
+                [6.42375, -66.58973],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 239.18034040617928, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_e23a1f07ab93456dadf3bc5372746c2d.bindTooltip(
+                `<div>
+                     <li><bold>Country : Venezuela<li><bold>Confirmed : 10010<li><bold>Active : 7243<li><bold>Deaths : 96<li><bold>New Cases : 303<li><bold>New Death : 3<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a8f239cb918d4e8ea6fb3d5e5fff9be3 = L.circle(
+                [14.058323999999999, 108.277199],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_a8f239cb918d4e8ea6fb3d5e5fff9be3.bindTooltip(
+                `<div>
+                     <li><bold>Country : Vietnam<li><bold>Confirmed : 373<li><bold>Active : 21<li><bold>Deaths : 0<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_029005e0fbad47f698301f013c46af21 = L.circle(
+                [31.9466, 35.3027],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 93.78712258392171, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_029005e0fbad47f698301f013c46af21.bindTooltip(
+                `<div>
+                     <li><bold>Country : West Bank and Gaza<li><bold>Confirmed : 6764<li><bold>Active : 5636<li><bold>Deaths : 44<li><bold>New Cases : 198<li><bold>New Death : 5<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a29906cdcbbd46be9d39b33814444b1e = L.circle(
+                [24.215526999999998, -12.885834],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_a29906cdcbbd46be9d39b33814444b1e.bindTooltip(
+                `<div>
+                     <li><bold>Country : Western Sahara<li><bold>Confirmed : 10<li><bold>Active : 1<li><bold>Deaths : 1<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ca73452d7eb341f6b5ad22349b26e7a5 = L.circle(
+                [-13.133897, 27.849332],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 88.69500212860365, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_ca73452d7eb341f6b5ad22349b26e7a5.bindTooltip(
+                `<div>
+                     <li><bold>Country : Zambia<li><bold>Confirmed : 1895<li><bold>Active : 441<li><bold>Deaths : 42<li><bold>New Cases : 0<li><bold>New Death : 0<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e19148661dc1499aa058aba696927601 = L.circle(
+                [-19.015438, 29.154857],
+                {"bubblingMouseEvents": true, "color": "#6c757d", "dashArray": null, "dashOffset": null, "fill": "crimson", "fillColor": "#6c757d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36.4112840605216, "stroke": true, "weight": 3}
+            ).addTo(map_a7a4ac561b6a49f5963c013bd321963f);
+        
+    
+            circle_e19148661dc1499aa058aba696927601.bindTooltip(
+                `<div>
+                     <li><bold>Country : Zimbabwe<li><bold>Confirmed : 1064<li><bold>Active : 701<li><bold>Deaths : 20<li><bold>New Cases : 30<li><bold>New Death : 1<li><bold>New Recovered : 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
