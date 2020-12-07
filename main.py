@@ -488,7 +488,7 @@ for i in range(0, len(temp)):
                     '<li><bold>New Cases : '+str(temp.iloc[i]['No_Of_New_Cases'])+
                     '<li><bold>New Death : '+str(temp.iloc[i]['No_Of_New_Deaths'])+
                     '<li><bold>New Recovered : '+str(temp.iloc[i]['No_Of_New_Recovered']),
-        radius=int(temp.iloc[i]['Confirmed'])).add_to(_map)
+        radius=int(temp.iloc[i]['Confirmed'] / 5)).add_to(_map)
 _map.save('./Maps/Confirmed.html')
 
 
@@ -508,7 +508,7 @@ for i in range(0, len(temp)):
                     '<li><bold>New Cases : '+str(temp.iloc[i]['No_Of_New_Cases'])+
                     '<li><bold>New Death : '+str(temp.iloc[i]['No_Of_New_Deaths'])+
                     '<li><bold>New Recovered : '+str(temp.iloc[i]['No_Of_New_Recovered']),
-        radius=int(temp.iloc[i]['Active'])).add_to(_map)
+        radius=int(temp.iloc[i]['Active'] / 5)).add_to(_map)
 
 _map.save('./Maps/Active.html')
 
@@ -530,7 +530,7 @@ for i in range(0, len(temp)):
                     '<li><bold>New Cases : '+str(temp.iloc[i]['No_Of_New_Cases'])+
                     '<li><bold>New Death : '+str(temp.iloc[i]['No_Of_New_Deaths'])+
                     '<li><bold>New Recovered : '+str(temp.iloc[i]['No_Of_New_Recovered']),
-        radius=int(temp.iloc[i]['Recovered'])**1.05).add_to(_map)
+        radius=int(temp.iloc[i]['Recovered'] / 5)).add_to(_map)
 
 _map.save('./Maps/Recovered.html')
 
@@ -551,7 +551,7 @@ for i in range(0, len(temp)):
                     '<li><bold>New Cases : '+str(temp.iloc[i]['No_Of_New_Cases'])+
                     '<li><bold>New Death : '+str(temp.iloc[i]['No_Of_New_Deaths'])+
                     '<li><bold>New Recovered : '+str(temp.iloc[i]['No_Of_New_Recovered']),
-        radius=int(temp.iloc[i]['Deaths'])**1.2).add_to(_map)
+        radius=int(temp.iloc[i]['Deaths'] * 5)).add_to(_map)
 
 _map.save('./Maps/Deceased.html')
 
@@ -612,7 +612,7 @@ for i in range(0, len(temp)):
                     '<li><bold>New Cases : '+str(temp.iloc[i]['No_Of_New_Cases'])+
                     '<li><bold>New Death : '+str(temp.iloc[i]['No_Of_New_Deaths'])+
                     '<li><bold>New Recovered : '+str(temp.iloc[i]['No_Of_New_Recovered']),
-        radius=int(temp.iloc[i]['Confirmed'])).add_to(_map)
+        radius=int(temp.iloc[i]['Confirmed'] / 5)).add_to(_map)
 _map.save('./Maps/Mean_Age.html')
 
 # ---------------------------------------------------------------------------------------------------------------------------------
@@ -639,7 +639,7 @@ for i in range(0, len(temp)):
                     '<li><bold>New Cases : '+str(temp.iloc[i]['No_Of_New_Cases'])+
                     '<li><bold>New Death : '+str(temp.iloc[i]['No_Of_New_Deaths'])+
                     '<li><bold>New Recovered : '+str(temp.iloc[i]['No_Of_New_Recovered']),
-        radius=int(temp.iloc[i]['Confirmed'])).add_to(_map)
+        radius=int(temp.iloc[i]['Confirmed'] / 5)).add_to(_map)
 _map.save('./Maps/Tourism.html')
 
 # ---------------------------------------------------------------------------------------------------------------------------------
@@ -668,7 +668,7 @@ for i in range(0, len(temp)):
                     '<li><bold>New Cases : '+str(temp.iloc[i]['No_Of_New_Cases'])+
                     '<li><bold>New Death : '+str(temp.iloc[i]['No_Of_New_Deaths'])+
                     '<li><bold>New Recovered : '+str(temp.iloc[i]['No_Of_New_Recovered']),
-        radius=int(temp.iloc[i]['Confirmed'])).add_to(_map)
+        radius=int(temp.iloc[i]['Confirmed'] / 5)).add_to(_map)
 _map.save('./Maps/Population.html')
 
 # ---------------------------------------------------------------------------------------------------------------------------------
