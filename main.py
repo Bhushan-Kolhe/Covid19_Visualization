@@ -29,6 +29,7 @@ import time
 import sys
 import os
 
+ENABLECHOROPLETH = False
 
 # Creating and Cleaning up Directories
 if not os.path.exists("images"):
@@ -76,13 +77,14 @@ for f in files:
 # Reseting the repository
 PATH_OF_GIT_REPO = r'D:\\Projects\\ML\\Covid19\\.git'
 
+"""
 try:
     repo = Repo(PATH_OF_GIT_REPO)
     repo.git.add('--all')
     repo.index.commit("Reset Repo")
 except:
     print("Reset Error")
-
+"""
 
 Active, Recovered, Confirmed, Deceased, Color_1, Color_2 =  '#ff073a', '#28a745', '#007bff', '#6c757d', '#FE9801', '#FF0F80'
 
@@ -562,7 +564,9 @@ fig = px.choropleth(full_grouped, locations="Country/Region", locationmode='coun
                     hover_name="Country/Region",
                     title='Confirmed Cases', color_continuous_scale=px.colors.sequential.Blues)
 fig.update(layout_coloraxis_showscale=False)
-fig.write_image("images/Confirmed_choropleth.svg")
+
+if ENABLECHOROPLETH:
+    fig.write_image("images/Confirmed_choropleth.svg")
 
 # ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -570,7 +574,9 @@ fig = px.choropleth(full_grouped, locations="Country/Region", locationmode='coun
                     hover_name="Country/Region",
                     title='Active Cases', color_continuous_scale=px.colors.sequential.Reds)
 fig.update(layout_coloraxis_showscale=False)
-fig.write_image("images/Active_choropleth.svg")
+
+if ENABLECHOROPLETH:
+    fig.write_image("images/Active_choropleth.svg")
 
 # ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -578,7 +584,9 @@ fig = px.choropleth(full_grouped, locations="Country/Region", locationmode='coun
                     hover_name="Country/Region",
                     title='Recovered Cases', color_continuous_scale=px.colors.sequential.Greens)
 fig.update(layout_coloraxis_showscale=False)
-fig.write_image("images/Recovered_choropleth.svg")
+
+if ENABLECHOROPLETH:
+    fig.write_image("images/Recovered_choropleth.svg")
 
 # ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -586,7 +594,9 @@ fig = px.choropleth(full_grouped, locations="Country/Region", locationmode='coun
                     hover_name="Country/Region",
                     title='Deceased Cases', color_continuous_scale=px.colors.sequential.Greys)
 fig.update(layout_coloraxis_showscale=False)
-fig.write_image("images/Deceased_choropleth.svg")
+
+if ENABLECHOROPLETH:
+    fig.write_image("images/Deceased_choropleth.svg")
 
 # ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -1223,4 +1233,4 @@ def git_push():
     except:
         print('Some error occured while pushing the code')    
 
-git_push()
+#git_push()
